@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>AI4ALL Skin Cancer Classification</title>
+        <link rel="icon" type="image/x-icon" href="ai4all.jpg" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">AI4ALL</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="ai4all.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#problem">The Problem</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#solution">The Solution</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#model">The Model</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#theteam">The Team</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cited">Works Cited</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- Title-->
+            <section class="text-section" id="about">
+                <div class="text-section-content">
+                    <h1 class="mb-0">
+                        Skin Cancer
+                        <span class="text-primary">Classification</span>
+                    </h1>
+                    <div class="subheading mb-5">
+				Gavin Gammoh, Brian Guo, Michael Jenkins, Abby Alem
+                    </div>
+                    <p class="lead mb-5"></p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- The Problem-->
+            <section class="text-section" id="problem">
+                <div class=text-section-content">
+                    <h2 class="mb-5">The Problem</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+				    <h3 class="mb-2">What Is Skin Cancer?</h3>
+                            <p class="mb-3">Skin cancer is the out-of-control growth of abnormal cells in the epidermis, 
+					   the outermost skin layer, caused by unrepaired DNA damage that triggers mutations. 
+					   These mutations lead the skin cells to multiply rapidly and form malignant tumors.
+					   The two main causes of skin cancer are the sun’s harmful ultraviolet (UV) rays and the use of UV tanning beds. 
+					   </p>
+				    
+				    <h3 class="mb-2">The Risk</h3>
+				    <p class="mb-3">The world’s most common cancer is a relentless disease that strikes one in five people by age 70. It is not uncommon for even those younger than 30 to be diagnosed with skin cancer.
+							  The good news is that 99 percent of all cases are curable if they are diagnosed and treated early enough. 
+							  But in order to stop skin cancer, we have to spot it on time. That's where we come in.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>     
+            <hr class="m-0" />
+            <!-- The Solution-->
+            <section class="text-section" id="solution">
+                <div class="text-section-content">
+                    <h2 class="mb-5">The Solution</h2>
+                    <h3 class="mb-2">Artificial Intelligence</h3>
+                    <p>Unlike other cancers that form on the inside of the body and require things like MRIs to detect, skin cancer forms on the outside and is usually visible. 
+			     Learning what to look for on your own skin gives you the power to detect cancer early when it’s easiest to cure, before it can become dangerous, disfiguring or deadly.</p>
+                    <p>Our team has developed a machine learning model through the use of Convolutional Netural Netoworks (CNNs) that does exactly this. Skin cancer cannot be completly diagnosed for just looking at it rather, a skin biopsy is needed. 
+						This is where a dermatologist will remove all or part of a suspicious spot and then examine it under a microscope to look for cancer cells.</p>
+			  <p>The goal is to give regular people who may not be very informed about skin cancer the ability to identify these suspicous spots early, with some idea of what they might be, through one simple image.
+			     Early detection is key to saving lives and AI has the power to help in this process</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Our Model-->
+            <section class="text-section" id="model">
+                <div class="text-section-content">
+                    <h2 class="mb-5">The Model</h2>
+		         <p class="mb-0">The Model we trained can be used here. It has roughly an 80% accuracy so it is not meant to actually be used in the real world rather, it is meant to show off different applications of AI and how it could be used to help lives.</p>
+
+  	  		<section>
+   	   			<p class='section-head'>Status</p>
+		 	     <div id="status"></div>
+   		 	</section>
+
+			    <section>
+ 			     <p class='section-head'>Model Output</p>
+		
+ 			     <div id="file-container" style="display: none">
+ 			       Upload an image: <input type="file" id="files" name="files[]" multiple />
+ 			     </div>
+
+  			    <div id="predictions"></div>
+
+  			    <img style="display: none" id="cat" src="ai4all.jpg" width=224 height=224 />
+  			  </section>
+
+  			  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2"></script>
+  			  <!-- <script src="imagenet_classes.js"></script> -->
+  			  <script src="index.js"></script>
+		      <p class="mb-0" style="font-size:70%;"><i>*Trained using tensorflow keras. Simple model with some custom changes to improve performance.</i></p>
+			<img src="Model.png" alt="Model Structure" width="400" height="350"> <img src="Variables.png" alt="Hyper Parameters" width="400" height="350">
+		      <p class="mb-0" style="font-size:70%;"><i>Model Structure</i></p>
+            </section>
+            <hr class="m-0" />
+		<!-- The Team-->
+            <section class="text-section" id="theteam">
+                <div class="text-section-content">
+                    <h2 class="mb-5">The Team</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Gavin Gammoh</h3>
+                            <div class="subheading mb-3">Lebanon, OH</div>
+                            <p>-bio</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Brian Guo</h3>
+                            <div class="subheading mb-3">Lebanon, IL</div>
+                            <p>-bio</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Michael Jenkins</h3>
+                            <div class="subheading mb-3">Chantilly, VA</div>
+                            <p>-bio</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Abby Alem</h3>
+                            <div class="subheading mb-3">Denver, CO</div>
+                            <p>-bio</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		<hr class="m-0" />
+            <!-- Works Cited-->
+            <section class="text-section" id="cited">
+                <div class="text-section-content">
+                    <h2 class="mb-5">Works Cited</h2>
+				<p class="mb-0">The Skin Cancer Foundation. (2022, April 28). Skin Cancer Information. Retrieved July 21, 2022, from</p>
+				<a href="https://www.skincancer.org/skin-cancer-information/">https://www.skincancer.org/skin-cancer-information/</a>
+				<p class="mb-3"></p>
+				<p class="mb-0">American Academy of Dermatology. (n.d.). How can I tell if I have skin cancer? Retrieved July 21, 2022, from</p>
+				<a href="https://www.aad.org/public/diseases/skin-cancer/find/know-how">https://www.aad.org/public/diseases/skin-cancer/find/know-how</a> 	               
+				<p class="mb-3"></p>
+				<p class="mb-0">American Cancer Society. (2022, January 12). Key Statistics for Melanoma Skin Cancer. Retrieved July 21, 2022, from</p> 
+				<a href="https://www.cancer.org/cancer/melanoma-skin-cancer/about/key-statistics.html#:~:text=The%20average%20age%20of%20people,adults%20(especially%20young%20women)">https://www.cancer.org/cancer/melanoma-skin-cancer/about/key-statistics.html#:~:text=The%20average%20age%20of%20people,adults%20(especially%20young%20women)</a>
+		    </div>
+            </section>
+            <hr class="m-0" />
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
