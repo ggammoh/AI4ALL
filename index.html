@@ -89,27 +89,27 @@
                     <h2 class="mb-5">The Model</h2>
 		         <p class="mb-0">The Model we trained can be used here. It has a roughly 75% accuracy so it is not meant to actually be used in the real world rather, it is meant to show off different applications of AI and how it could be used to help lives. It is capable of classifying 7 different types of skin cancer.
 					Melanoma (mel), Melanocytic Nevi (nv), Basal Cell Carcinoma (bcc), Actinic Keratoses (akiec), Benign Keratosis-Like Lesions (bkl), Vascular Lesions (Vas), and Dermatofibroma (df)</p>
+			<section>
+			  <p class='section-head'>Status</p>
+      			  <div id="status"></div>
+    			</section>
 
-  	  		<section>
-   	   			<p class='section-head'>Status</p>
-		 	     <div id="status"></div>
-   		 	</section>
+    			<section>
+      			  <p class='section-head'>Model Output</p>
 
-			    <section>
- 			     <p class='section-head'>Model Output</p>
-		
- 			     <div id="file-container" style="display: none">
- 			       Upload an image: <input type="file" id="files" name="files[]" multiple />
- 			     </div>
+      			  <div id="file-container" style="display: none">
+        			Upload an image: <input type="file" id="files" name="files[]" multiple />
+      			  </div>
 
-  			    <div id="predictions"></div>
+      			  <div id="predictions"></div>
 
-  			    <img style="display: none" id="cat" src="ai4all.jpg" width=224 height=224 />
-  			  </section>
+      			  <img style="display: none" id="cat" src="ai4all.jpg" width=224 height=224 />
+    			</section>
 
-  			  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2"></script>
-  			  <!-- <script src="imagenet_classes.js"></script> -->
-  			  <script src="index.js"></script>
+    			<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2"></script>
+    			  <!-- <script src="imagenet_classes.js"></script> -->
+    			<script src="index.js"></script>
+  	  		
 		      <p class="mb-0" style="font-size:70%;"><i>*Trained using tensorflow keras. Simple model with some custom changes to improve performance.</i></p>
 			<img src="Model.png" alt="Model Structure" width="400" height="350"> <img src="Variables.png" alt="Hyper Parameters" width="400" height="350">
 		      <p class="mb-0" style="font-size:70%;"><i>Model Structure</i></p>
